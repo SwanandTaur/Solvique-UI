@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  padding: 0.8rem;
+}
+main nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+main nav #logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+main nav #logo img {
+  width: 3.5rem;
+  background-color: royalblue;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+main nav #navs {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  list-style: none;
+  white-space: nowrap;
+  display: none;
+  top: 0;
+}
+main nav #navBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+main nav #navBtns #signup {
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  color: royalblue;
+  border: 1px solid royalblue;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+main nav #navBtns #getStart {
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  color: #fff;
+  border: 1px solid royalblue;
+  background-color: royalblue;
+  border-radius: 1.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+main #section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(208, 208, 208, 0.291);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main #section1 .subSection #mainHeading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main #section1 .subSection .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section1 .subSection .right #mainPara {
+  font-size: 1.4rem;
+}
+main #section1 .subSection .right #mainBtns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+main #section1 .subSection .right #mainBtns .started {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: 1px solid royalblue;
+  background-color: royalblue;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+main #section1 .subSection .right #mainBtns .trialBtn {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  color: royalblue;
+  border: 1px solid royalblue;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+main #section1 img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main #growth {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #growth .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #growth .container .growthPoint h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+main #growth .container .growthPoint p {
+  font-size: 1.2rem;
+}
+main #section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(208, 208, 208, 0.291);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main #section2 .subSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section2 .subSection .head {
+  width: 100%;
+  text-align: start;
+}
+main #section2 .subSection .head #aboutHead {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main #section2 .subSection .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section2 .subSection .bottom h1 {
+  font-size: 2.2rem;
+}
+main #section2 .subSection .bottom p {
+  font-size: 1.4rem;
+}
+main #section2 img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main #section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main #section3 .subSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section3 .subSection .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section3 .subSection .left .head {
+  width: 100%;
+  text-align: start;
+}
+main #section3 .subSection .left .head #expertiseHead {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main #section3 .subSection .left #expertiseHeading {
+  font-size: 2.2rem;
+}
+main #section3 .subSection .right p {
+  font-size: 1.4rem;
+}
+main #section3 #profilesSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+main #section3 #profilesSection img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main #section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(208, 208, 208, 0.291);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main #section4 .subSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section4 .subSection .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section4 .subSection .top .head {
+  width: 100%;
+  text-align: start;
+}
+main #section4 .subSection .top .head #milestoneHead {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main #section4 .subSection .top .head h1 {
+  font-size: 2.2rem;
+}
+main #section4 .subSection img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main #section4 #milestoneSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section4 #milestoneSection .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section4 #milestoneSection .top p {
+  font-size: 1.4rem;
+}
+main #section4 #milestoneSection #milestones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section4 #milestoneSection #milestones .stone {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: flex-start;
+}
+main #section4 #milestoneSection #milestones .stone i {
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgb(177, 177, 177);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+main #section4 #milestoneSection #milestones .stone .first {
+  background-color: royalblue;
+}
+main #section4 #milestoneSection #milestones .stone .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+main #section4 #milestoneSection #milestones .stone .info .year {
+  font-size: 1.4rem;
+}
+main #section4 #milestoneSection #milestones .stone .info .firstYr {
+  color: royalblue;
+}
+main #section4 #milestoneSection #milestones .stone .info h1 {
+  font-size: 1.7rem;
+}
+main #section4 #milestoneSection #milestones .stone .info p {
+  font-size: 1.2rem;
+}
+main #section4 #milestoneSection #milestones .stone .info .link {
+  font-size: 1rem;
+}
+main #section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main #section5 .subSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section5 .subSection .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section5 .subSection .left .head {
+  width: 100%;
+  text-align: start;
+}
+main #section5 .subSection .left .head #connectHead {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+main #section5 .subSection .left h1 {
+  font-size: 2.2rem;
+}
+main #section5 .subSection .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main #section5 .subSection .right p {
+  font-size: 1.2rem;
+}
+main #section5 .subSection .right h3 {
+  font-size: 1.7rem;
+}/*# sourceMappingURL=style.css.map */

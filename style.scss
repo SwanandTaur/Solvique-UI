@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alan Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+@mixin flexy($dir: row, $gap: 0.5rem, $justify: center) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: center;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+main {
+  padding: 0.8rem;
+  nav {
+    @include flexy(row, 0, space-between);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    #logo {
+      @include flexy(row, 0.5rem, space-between);
+      img {
+        width: 3.5rem;
+        background-color: royalblue;
+        border-radius: 50%;
+        padding: 0.5rem;
+      }
+    }
+    #navs {
+      position: sticky;
+      @include flexy(row, 0.8rem, space-between);
+      list-style: none;
+      white-space: nowrap;
+      display: none;
+      top: 0;
+    }
+    #navBtns {
+      @include flexy(row, 0.8rem, space-between);
+      #signup {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+        color: royalblue;
+        border: 1px solid royalblue;
+        border-radius: 1.5rem;
+        cursor: pointer;
+      }
+      #getStart {
+        font-size: 1rem;
+        padding: 0.5rem 0.8rem;
+        color: #fff;
+        border: 1px solid royalblue;
+        background-color: royalblue;
+        border-radius: 1.5rem;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+    }
+  }
+
+  #section1 {
+    @include flexy(column, 1rem);
+    background-color: rgba(208, 208, 208, 0.291);
+    padding: 1rem;
+    border-radius: 1rem;
+    .subSection {
+      #mainHeading {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      .right {
+        @include flexy(column, 1rem);
+        #mainPara {
+          font-size: 1.4rem;
+        }
+        #mainBtns {
+          @include flexy(row, 1.5rem);
+          .started {
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            border: 1px solid royalblue;
+            background-color: royalblue;
+            border-radius: 1.5rem;
+            cursor: pointer;
+          }
+          .trialBtn {
+            font-size: 1.4rem;
+            padding: 0.5rem 1rem;
+            color: royalblue;
+            border: 1px solid royalblue;
+            border-radius: 1.5rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+
+  #growth {
+    padding: 1rem 0;
+    @include flexy(column, 1rem);
+    .container {
+      @include flexy(row, 1rem);
+      .growthPoint {
+        h1 {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  #section2 {
+    @include flexy(column, 1rem);
+    background-color: rgba(208, 208, 208, 0.291);
+    padding: 1rem;
+    border-radius: 1rem;
+    .subSection {
+      @include flexy(column, 1rem);
+      .head {
+        width: 100%;
+        text-align: start;
+        #aboutHead {
+          font-size: 1rem;
+          padding: 0.3rem 1rem;
+          border: 1px solid black;
+          border-radius: 1.5rem;
+          display: inline-block;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+      .bottom {
+        @include flexy(column, 1rem);
+        h1 {
+          font-size: 2.2rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+
+  #section3 {
+    @include flexy(column, 1rem);
+    padding: 1rem;
+    border-radius: 1rem;
+    .subSection {
+      @include flexy(column, 1rem);
+      .left {
+        @include flexy(column, 1rem);
+        .head {
+          width: 100%;
+          text-align: start;
+          #expertiseHead {
+            font-size: 1rem;
+            padding: 0.3rem 1rem;
+            border: 1px solid black;
+            border-radius: 1.5rem;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+        #expertiseHeading {
+          font-size: 2.2rem;
+        }
+      }
+      .right {
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+    #profilesSection {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 0.5rem;
+      img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  #section4 {
+    @include flexy(column, 1rem);
+    background-color: rgba(208, 208, 208, 0.291);
+    padding: 1rem;
+    border-radius: 1rem;
+    .subSection {
+      @include flexy(column, 1rem);
+      .top {
+        @include flexy(column, 1rem);
+        .head {
+          width: 100%;
+          text-align: start;
+          #milestoneHead {
+            font-size: 1rem;
+            padding: 0.3rem 1rem;
+            border: 1px solid black;
+            border-radius: 1.5rem;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+          h1 {
+            font-size: 2.2rem;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        border-radius: 1rem;
+      }
+    }
+
+    #milestoneSection {
+      @include flexy(column, 1rem);
+      .top {
+        @include flexy(column, 1rem);
+        p {
+          font-size: 1.4rem;
+        }
+      }
+      #milestones {
+        @include flexy(column, 1rem);
+        .stone {
+          width: 100%;
+          @include flexy(row, 1rem, flex-start);
+          align-items: flex-start;
+          i {
+            font-size: 1rem;
+            color: #fff;
+            background-color: rgb(177, 177, 177);
+            padding: 0.5rem;
+            border-radius: 50%;
+          }
+          .first {
+            background-color: royalblue;
+          }
+          .info {
+            @include flexy(column, 0.5rem);
+            .year {
+              font-size: 1.4rem;
+            }
+            .firstYr {
+              color: royalblue;
+            }
+            h1 {
+              font-size: 1.7rem;
+            }
+            p {
+              font-size: 1.2rem;
+            }
+            .link {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  #section5 {
+    @include flexy(column, 1rem);
+    padding: 1rem;
+    border-radius: 1rem;
+    .subSection {
+      @include flexy(column, 1rem);
+      .left {
+        @include flexy(column, 1rem);
+        .head {
+          width: 100%;
+          text-align: start;
+          #connectHead {
+            font-size: 1rem;
+            padding: 0.3rem 1rem;
+            border: 1px solid black;
+            border-radius: 1.5rem;
+            display: inline-block;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+      .right {
+        @include flexy(column, 1rem);
+        p {
+            font-size: 1.2rem;
+        }
+        h3{
+            font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+
